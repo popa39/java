@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="_0_clicks">0_ Clicks</string>
+    <string name="click">Click</string>
+    <string name="_0clicks">0 clicks</string>
+    <string name="фыв">х</string>
+    <string name="впыпва">у</string>
+    <string name="цукпу">й</string>
+    <string name="выапуук">п</string>
+    <string name="пуцкпа">о</string>
+    <string name="цуавыц">п</string>
+    <string name="сво">а</string>
+    <string name="сывац">и</string>
+    <string name="йуквыа">х</string>
+    <string name="hello_android">Hello Android!</string>
+    <string name="button1">й</string>
+    <string name="button2">х</string>
+    <string name="button3">у</string>
+    <string name="button4">ххихихихихихихихихихихихихи</string>
+    <string name="button5">^</string>
+    <string name="button6">_</string>
+    <string name="button7">^</string>
+    <string name="clicks">0 Clicks</string>
+    <string name="framelayout">Hello Android!</string>
+    <string name="хихи">твое имя в мире кекшик импакта</string>
+</resources>
