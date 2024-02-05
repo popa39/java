@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,27 +8,28 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <TextView
-        android:layout_width="0px"
-
-        android:layout_height="1500dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="152dp"
         android:background="#ffffff"
-        android:gravity="center"
-        android:text="@string/hello_android"
-        android:textSize="30sp"
+        android:gravity="left"
+        android:text="@string/head"
+        android:textSize="20sp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded,TextSizeCheck,TextSizeCheck" />
 
     <include
         layout="@layout/text_panel"
         android:layout_width="130dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="240dp"
+        android:layout_marginStart="240dp"
         android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,17 +47,19 @@
         android:id="@+id/minus_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintLeft_toRightOf="@id/plus_button"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <include layout="@layout/tablerow"
+    <include
         android:id="@+id/TableLayout"
+        layout="@layout/tablerow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginVertical="215dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <include layout="@layout/gridlayout"
         android:id="@+id/GridLayout"
@@ -63,6 +67,31 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="325dp"/>
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="350dp"/>
+
+    <ScrollView
+        android:layout_width="273dp"
+        android:layout_height="126dp"
+        android:layout_marginHorizontal="100dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="156dp"
+        app:srcCompat="@drawable/bc7a22b2f253a8d6563a34c40e75f3c3"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="175dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
